@@ -24,10 +24,10 @@ import vegabobo.dsusideloader.ui.screen.Destinations
 import vegabobo.dsusideloader.util.collectAsStateWithLifecycle
 
 object AboutLinks {
-    const val CONTRIBUTORS_URL = "https://github.com/VegaBobo/DSU-Sideloader/graphs/contributors"
-    const val REPOSITORY_URL = "https://github.com/VegaBobo/DSU-Sideloader"
+    const val CONTRIBUTORS_URL = "https://github.com/J3rr1ck/DSU-Sideloader/graphs/contributors"
+    const val REPOSITORY_URL = "https://github.com/J3rr1ck/DSU-Sideloader"
     const val WSTXDA_GITHUB = "https://github.com/WSTxda"
-    const val VEGABOBO_GITHUB = "https://github.com/VegaBobo"
+    const val VEGABOBO_GITHUB = "https://github.com/J3rr1ck"
 }
 
 @OptIn(ExperimentalMaterial3Api::class)
@@ -107,7 +107,7 @@ fun AboutScreen(
             addPadding = false,
         ) {
             PreferenceItem(
-                title = "VegaBobo",
+                title = "ClevrPwn",
                 description = stringResource(id = R.string.role_developer),
                 onClick = { uriHandler.openUri(AboutLinks.VEGABOBO_GITHUB) },
             )

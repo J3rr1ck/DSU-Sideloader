@@ -1,24 +1,42 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="Theme.DSUHelper" parent="Theme.Material3.DayNight">
-
+    <!-- Base application theme optimized for RLCD grayscale -->
+    <style name="Theme.DC1Helper" parent="Theme.Material3.DayNight">
+        <!-- Primary colors -->
         <item name="colorPrimary">@color/system_accent</item>
         <item name="colorPrimaryDark">@color/system_accent_darker</item>
         <item name="colorSecondary">@color/system_accent_2</item>
 
+        <!-- Error color -->
         <item name="colorError">@color/error</item>
 
-        <item name="colorPrimaryVariant">@color/system_accent</item>
-        <item name="colorSecondaryVariant">@color/system_accent_2</item>
-        <item name="scrimBackground">@color/netrual_color</item>
+        <!-- Variants -->
+        <item name="colorPrimaryVariant">@color/system_accent_darker</item>
+        <item name="colorSecondaryVariant">@color/system_accent</item>
+        <item name="scrimBackground">#CC000000</item>  <!-- Semi-transparent black for better contrast -->
 
-        <item name="colorSurface">@color/netrual_color</item>
+        <!-- Surface and container colors -->
+        <item name="colorSurface">@color/background</item>
+        <item name="colorOnSurface">#FF212121</item>  <!-- Dark gray for text on light surfaces -->
+        <item name="colorOnBackground">#FF212121</item>  <!-- Dark gray for text on background -->
         <item name="colorSecondaryContainer">@color/system_accent_soft</item>
 
+        <!-- System UI colors -->
         <item name="android:colorBackground">@color/background</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@color/background</item>
+        <item name="android:statusBarColor">@color/background</item>
         <item name="android:windowLightStatusBar">true</item>
+        <item name="android:windowLightNavigationBar">false</item>
 
+        <!-- Text and icon colors -->
+        <item name="android:textColorPrimary">#FF212121</item>  <!-- Dark gray for primary text -->
+        <item name="android:textColorSecondary">#757575</item>  <!-- Medium gray for secondary text -->
+        <item name="android:textColorTertiary">#9E9E9E</item>  <!-- Light gray for tertiary text -->
+        
+        <!-- Disabled state colors -->
+        <item name="android:textColorHint">#9E9E9E</item>  <!-- Light gray for hints -->
+        <item name="android:textColorLink">@color/system_accent</item>
+        
+        <!-- Border and divider colors -->
+        <item name="android:divider">#E0E0E0</item>  <!-- Light gray for dividers -->
     </style>
 </resources>

@@ -1,24 +1,42 @@
 <resources>
-    <!-- Base application theme. -->
-    <style name="Theme.DSUHelper" parent="Theme.Material3.DayNight">
+    <!-- Night theme optimized for RLCD grayscale -->
+    <style name="Theme.DC1Helper" parent="Theme.Material3.DayNight">
+        <!-- Primary colors - using lighter grays for dark mode -->
+        <item name="colorPrimary">#BDBDBD</item>  <!-- Light gray for primary elements -->
+        <item name="colorPrimaryDark">#E0E0E0</item>  <!-- Lighter gray for dark elements -->
+        <item name="colorSecondary">#9E9E9E</item>  <!-- Medium gray -->
 
-        <item name="colorPrimary">@color/system_accent</item>
-        <item name="colorPrimaryDark">@color/system_accent_darker</item>
-        <item name="colorSecondary">@color/system_accent</item>
+        <!-- Error color -->
+        <item name="colorError">#CCCCCC</item>  <!-- Light gray for errors -->
 
-        <item name="colorError">@color/error</item>
+        <!-- Variants -->
+        <item name="colorPrimaryVariant">#757575</item>  <!-- Darker gray for primary variant -->
+        <item name="colorSecondaryVariant">#9E9E9E</item>  <!-- Medium gray for secondary variant -->
+        <item name="scrimBackground">#80000000</item>  <!-- Semi-transparent black for scrim -->
 
-        <item name="colorPrimaryVariant">@color/system_accent</item>
-        <item name="colorSecondaryVariant">@color/system_accent_2</item>
-        <item name="scrimBackground">@color/netrual_color</item>
+        <!-- Surface and container colors -->
+        <item name="colorSurface">#121212</item>  <!-- Very dark gray for surfaces -->
+        <item name="colorOnSurface">#E0E0E0</item>  <!-- Light gray for text on dark surfaces -->
+        <item name="colorOnBackground">#E0E0E0</item>  <!-- Light gray for text on background -->
+        <item name="colorSecondaryContainer">#1E1E1E</item>  <!-- Slightly lighter than surface -->
 
-        <item name="colorSurface">@color/netrual_color</item>
-        <item name="colorSecondaryContainer">@color/system_accent_soft</item>
+        <!-- System UI colors -->
+        <item name="android:colorBackground">#121212</item>  <!-- Very dark gray background -->
+        <item name="android:navigationBarColor">#121212</item>
+        <item name="android:statusBarColor">#121212</item>
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
 
-        <item name="android:colorBackground">@color/background</item>
-        <item name="android:navigationBarColor">@android:color/transparent</item>
-        <item name="android:statusBarColor">@android:color/transparent</item>
-        <item name="android:windowLightStatusBar">true</item>
-
+        <!-- Text and icon colors -->
+        <item name="android:textColorPrimary">#E0E0E0</item>  <!-- Light gray for primary text -->
+        <item name="android:textColorSecondary">#B0B0B0</item>  <!-- Medium light gray for secondary text -->
+        <item name="android:textColorTertiary">#9E9E9E</item>  <!-- Medium gray for tertiary text -->
+        
+        <!-- Disabled state colors -->
+        <item name="android:textColorHint">#757575</item>  <!-- Darker gray for hints -->
+        <item name="android:textColorLink">#BDBDBD</item>  <!-- Light gray for links -->
+        
+        <!-- Border and divider colors -->
+        <item name="android:divider">#2D2D2D</item>  <!-- Dark gray for dividers -->
     </style>
 </resources>
